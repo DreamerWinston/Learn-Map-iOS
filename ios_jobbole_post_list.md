@@ -2026,7 +2026,7 @@
 
 1010.[高效 LLDB 调试技巧](http://ios.jobbole.com/84743/)
 
-1011.[](http://ios.jobbole.com/84735/)
+1011.[“给马一个规则，让它只能走日”设计模式](http://ios.jobbole.com/84735/)
 
 1012.[仿简书、淘宝等等App的View弹出效果](http://ios.jobbole.com/84732/)
 
