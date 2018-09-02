@@ -48,3 +48,25 @@
 	- 7.怎么防止别人反编译你的app？
 	- 8.YYAsyncLayer如何异步绘制？
 	- 9.优化你是从哪几方面着手？
+
+* 简单说一下APP的启动过程，从main文件开始说起
+* Swift与Objective-C的区别
+- 编译连接 id 与instancetype的区别
+* @synthesize 与 @dynamic区别
+- NSProxy与NSObject区别
+- imageName和imageWithContextOfFile的区别
+- UDID与UUID的区别
+- CPU与GPU
+- Pt与px的区别
+- import与include 与@class
+- CFSocket CFNetwork BSD Socket
+* app内存你是如何分析的？
+* Block在内存中的位置
+* iOS app为什么内存没有泄露，内存却降不下来
+* 内存分区情况
+* 队列和栈
+- 单例会有什么弊端？
+* 什么时候会使用Core Graphics，以及使用步骤？
+* 你会如何存储用户的一些敏感信息，如登录的token
+- didReceiveMemoryWarning
+- 代理和通知的区别
