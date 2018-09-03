@@ -17,3 +17,15 @@
 * 代理的作用
 * ASIHttpRequest、AFNetWorking之间的区别
 * NSNotification、Block、Delegate和KVO的区别。
+
+* static、self、super关键字的作用
+* #include与#import的区别，#import 与@class 的区别
+* @public、@protected、@private 它们的含义与作用
+* isMemberOfClass 和 isKindOfClass 联系与区别
+- iOS 开发中数据持久性有哪几种?
+* 对象可以被copy的条件
+* 自动释放池工作原理
+* 堆和栈的区别
+* 线程和进程的区别,程序中为什么要使用多线程
+* 内存的使用和优化的注意事项
+* 如果页面 A 跳转到 页面 B，A 的 viewDidDisappear 方法和 B 的 viewDidAppear 方法哪个先调用？

@@ -13,3 +13,124 @@
 	- 4、UILabel、UIButton、UITableView 跟 NSObject 啥关系？具体讲讲
 	- 5、A 里有B、C 两个view，B中有两个按钮E、F，当我点击F按钮，编译器进行了哪些操作？
 	- 6、AOP解释下，可以用到哪些地方，有啥优缺点？
+
+- By. 面试之道
+	- Swift
+		* 类和结构体有什么区别
+		- Swift是面向对象还是函数式的编程语言
+		- 在swift中,什么是可选型
+		- 在swift中,什么是泛型
+		- 说明并比较关键词:Open,Public,Internal,File-private,Private
+		- Strong,Weak,Unowned的区别
+		- 在Swift中,如何理解copy-on-write
+		- 什么是属性观察(Property Observer)
+		- 在结构体中如何修改成员变量的方法
+		- 如何用Siwft实现或 || 操作
+		- 实现一个函数:输入是任意一个整数,输出为输入的整数+2
+		- Swift为什么将String,Array和Dictionary设计成值类型
+		- 如何用Swift将协议(protocol) 中的部分方法设计成可选(optional)
+		- 协议的代码实践
+		- Swift和Objective-C如何混编,方法如何调用
+		- 初始化方法有什么异同
+		- 协议有什么异同
+		- 谈谈OC与Swift动态特性的理解
+		- 语言特性代码实战
+		- Swift和Objective-C的自省有什么不同
+		- 比较关键词:Serial Concurrent Sync 和Async
+	- Objective-C
+		- 什么是ARC
+		- 什么情况下会出现循环引用
+		- 说明并比较关键词:Strong ,Weak ,Assign和Copy
+		- 说明并比较关键词:Atomatic 和nonatomic
+		- Atomic是百分之百线程安全的吗
+		- 说明并比较关键词: __ weak 和__ block
+		- 什么是block? 他和代理的区别是什么
+		- 属性声明代码风格考察
+		- 架构解耦代码考察
+		- 内存管理语法考察
+		- 多线程语法考察
+		- 以scheduledTimerWithTimeInterval 的方式触发的timer,在滑动页面上的列表时timer会暂停,为什么?该如何解决
+		- message send 如果找不到对象,后续会如何处理
+		- 什么是method swizzling
+		- 能否通过Category给已有的类添加属性
+		- LLDB中的p和po有什么区别
+		- Buildtime issues 和Runtime issues的区别
+	- 架构与设计模式
+		- 说说你平常用到的设计模式
+		- 什么是MVC
+		- Objective-C和Swift在单例模式的设计模式
+		- 什么是装饰模式
+		- 什么是观察者模式
+		- 什么是备忘录模式
+		- 比较苹果官方的MVC架构的优点和缺点
+		- MVC架构的代码实战
+		- MVCS中的S为什么要单独拆分出来
+		- MVP和MVC有什么异同
+		- MVVM中的ViewModel作用是什么
+		- 比较MVC MVP MVVM三种架构
+		- VIPER之间的各个组件是如何交互的
+		- 什么是OOP? 在iOS开发中有什么优点
+		- OOP在iOS开发中有什么缺点
+		- POP相比OOP有哪些优势
+	- UI控件和基本布局
+		- 要在UIView上定义一个Label有几种方式
+		- Storyboard/Xib和纯代码构建UI相比 有哪些优点和缺点
+		- Auto Layout 和Frame 在UI布局和渲染上有什么区别
+		- UIView 和CALayer有什么区别
+		* 说明比较关键词:Frame ,Bounds,Center
+		- 说明比较方法:layoutifNeeded ,layoutSubviews setNeedsLayout
+		- 说明比较关键词:Safe Area ,SafeAreaLayoutGuide,SafeAreaInsets
+		- 在iOS中实现动画的方式有几种
+		- 控制屏幕上的圆形小球,使其右滑动200个point
+		- 在iOS开发中如何保证UI在iPhone\iPad\iPad分屏情况下依然适用
+		- 如何使用Drag&drop实现图片拖动功能
+		- 说明并比较关键词:contentView \ contentInset \contentSize \contentOffset
+		- 说明UITableViewCell 的重用机制
+		- 说明并比较协议 UItableviewDataSource 和UItableViewDelegate
+		- 实现一个10行的列表,每行随机显示一个0~100的整数,用户可以删除\可以移动任意一行,下拉列表中的数字重新刷新
+		- UICollectionView的Supplementary Views和Decoration Views分别代表什么
+		- 如果一个列表视图滑动很慢,那么该怎么优化
+		- 说说实现预加载的方法
+		- 如何用UICollectionView实现瀑布流界面
+		- 在iOS开发中,如何实现编码和解码
+		- 说一说iOS开发中的数据持久化的方案
+		- 要给UIbutton增加点击后抖动的效果,该怎样实现
+		- POP的代码实现
+		- 试用Swift实现二分搜索算法
+	- 测试与发布
+		- 一个App崩溃了,可能是什么原因造成的
+		- 在模拟机完成所有测试之后,就不需要在真机上再进行测试了吗
+		- 为什么在单元测试中引入代码模块要用@testable关键词
+		- 单元测试的代码实战
+		- 说一说iOS中的性能测试
+		- 说一说iOS开发中的UI测试
+		- 如何检查测试覆盖率
+		- 什么是iOS中的AppID
+		- 什么是iOS中的Code Signing
+		- 什么是iOS中的App Thinning
+		- 向App Store 提交App时有哪些原因可能被拒.
+	- 线程
+		- 在iOS开发中,对于并发操作有哪种方式
+		- 串行队列的代码实战
+		- 并行队列的代码实战
+		- 举例说明iOS并发编程的三大问题
+		- 竞态条件的代码实践
+		- 比较GCD的实战:dispatch_async dispatch_after dispatch_once dispatch_group
+		- GCD中全局队列有哪种优先级
+		- 试比较Operations 中的关键词:Operation BlockOperation OperationQueue
+		- 如何在OperationQueue中取消某个Operation
+		- 在实际开发中,主线程和其他线程有什么使用场景
+	- 网络层
+		* 说一说HTTP中的GET与POST的区别
+		- 说一说Seesion和Cookie的概念
+		- 说明网络协议Ajax Poling 、Long Polling 、WebSockets和Server-Sent Event
+		- 在一个HTTPS连接的网络中,输入账号和密码并单击登录按钮后,到服务器返回这个请求,这期间经历了什么
+		- 说明并比较类:URLSessionTask URLSessionDataTask URLSessionUploadTask URLSeesionDownloadTask
+		- 什么是Complention Handler
+		- 设计一个方法,在给定API的网址的条件下,返回用户数据
+		- 在iOS开发中,本地消息通知的流程是怎么样的
+		- 说一说在iOS开发中,远程消息推送原理
+	- 分析与优化
+		- 怎样解决EXC_BAD_ACCESS
+		* App启动时间过长,应该怎样优化
+		* 如何使用Xcode检测代码中的循环引用.

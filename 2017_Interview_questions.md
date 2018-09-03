@@ -70,3 +70,19 @@
 * 你会如何存储用户的一些敏感信息，如登录的token
 - didReceiveMemoryWarning
 - 代理和通知的区别
+
+* #define的语法 以及标准宏
+* const与static的作用和区别 auto变量
+- C语言相关Sprintf,strcpy,memcpy如何使用及区别
+* Malloc和New的区别
+- 你是否接触过OC的反射机制,简单聊一下概念和使用
+- 什么是SEL 如何声明一个SEL,通过哪些方法能够,调用SEL包装起来的方法
+- 懒加载(What  is  lazy  loading  ?)
+- selector和method 有什么不同
+- atomic和non-atomic的区别
+- SEL isa super cmd是什么
+- load与initialize的区别
+- Weak strong copy assign的区别
+* hybrid开发
+* 如何实现夜间模式？
+- 离屏渲染及其优化方式
