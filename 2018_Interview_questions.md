@@ -191,3 +191,36 @@
 		- 讲讲 MVC、MVVM、MVP，以及你在项目里具体是怎么写的？
 		- 你自己用过哪些设计模式？
 		- 一般开始做一个项目，你的架构是如何思考的？
+
+- By. iOS大咖程序员
+	* runloop是什么／runloop的概念？
+	* NSRunLoop 和 CFRunLoopRef？
+	* runloop应用场景？
+	* runloop和线程的关系？
+	* runloop对外接口／runloop的几个类？
+	* Runloop内部逻辑
+	* Runtime是什么
+	* 为什么需要Runtime
+	* Runtime 的作用
+	* Runtime的相关术语，你知道的有哪些？
+	* Runtime与消息的关系？
+	- 如何交换系统的方法？
+	- 如何让 Category 支持属性？(使用runtime)
+	- Toll-Free Bridging 是什么？什么情况下会使用？
+	- performSelector:withObject:afterDelay: 内部大概是怎么实现的，有什么注意事项么？
+	- runtime 如何实现 weak 属性？
+	- runtime如何通过selector找到对应的IMP地址？（分别考虑类方法和实例方法）
+	- 使用runtime Associate方法关联的对象，需要在主对象dealloc的时候释放么？
+	- _objc_msgForward函数是做什么的？直接调用它将会发生什么？
+	- 能否向编译后得到的类中增加实例变量？能否向运行时创建的类中添加实例变量？为什么？
+	- 简述下Objective-C中调用方法的过程（runtime）
+	- 什么是method swizzling（俗称黑魔法）
+	* 编译过程中都做了哪些事情
+	* 字典实现原理
+	- 如何访问并修改一个类的私有属性
+	* 你使用过Objective-C的运行时编程（Runtime Programming）么？如果使用过，你用它做了什么？你还能记得你所使用的相关的头文件或者某些方法的名称吗？
+	* Core开头的系列的内容。是否使用过CoreAnimation和CoreGraphics。UI框架和CA，CG框架的联系是什么？分别用CA和CG做过些什么动画或者图像上的内容。（有需要的话还可以涉及Quartz的一些内容）
+	* UIScrollView 大概是如何实现的，它是如何捕捉、响应手势的？
+	* 是否使用过CoreText或者CoreImage等？如果使用过，请谈谈你使用CoreText或者CoreImage的体验。
+	* 直接调用_objc_msgForward函数将会发生什么？
+	* main()之前的过程有哪些？
