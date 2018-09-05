@@ -224,3 +224,15 @@
 	* 是否使用过CoreText或者CoreImage等？如果使用过，请谈谈你使用CoreText或者CoreImage的体验。
 	* 直接调用_objc_msgForward函数将会发生什么？
 	* main()之前的过程有哪些？
+
+- 如何交换系统的方法？
+- 如何让 Category 支持属性？(使用runtime)
+- Toll-Free Bridging 是什么？什么情况下会使用？
+- performSelector:withObject:afterDelay: 内部大概是怎么实现的，有什么注意事项么？
+- runtime 如何实现 weak 属性？
+- runtime如何通过selector找到对应的IMP地址？（分别考虑类方法和实例方法）
+- 使用runtime Associate方法关联的对象，需要在主对象dealloc的时候释放么？
+- _objc_msgForward函数是做什么的？直接调用它将会发生什么？
+- 能否向编译后得到的类中增加实例变量？能否向运行时创建的类中添加实例变量？为什么？
+- 简述下Objective-C中调用方法的过程（runtime）
+- 什么是method swizzling（俗称黑魔法）
