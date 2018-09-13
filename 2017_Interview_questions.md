@@ -1,5 +1,9 @@
 # 2017年iOS开发面试题
 
+本面试题主要版权归iOS大咖程序员.
+
+公众号:iOS大咖程序员  简书地址:https://www.jianshu.com/u/37860723842a
+
 本面试题均为网上搜集,面试题答案均为本人搜集整理.
 
 不想看答案的可以先根据题目自测一下.
@@ -7,6 +11,8 @@
 暂时以答案以及外链的形式展示给大家,有什么建议可以私信我.
 
 ## 题目列表
+
+### 阿里面试题
 1. dSYM你是如何分析的?
 2. 多线程有哪几种你更倾向于哪一种?
 3. 单例弊端?
@@ -16,79 +22,81 @@
 7. 0x8badf00d表示是什么?
 8. 怎么防止反编译?
 9. 说说你遇到到的技术难点?
-1. 说说你了解的第三方原理或底层知识?
-2. 怎么判断某个 cell 是否显示在屏幕上?
-3. 进程和线程的区别?
-4. TCP 与 UDP 区别?
-5. TCP 流量控制?
-6. 数组和链表的区别?
-7. UIView 生命周期?
-8. 如果页面 A 跳转到 页面 B，A 的 viewDidDisappear 方法和 B 的 viewDidAppear 方法哪个先调用?
-9. block 循环引用问题?
-1. ARC 的本质?
-2. RunLoop 的基本概念，它是怎么休眠的?
-3. Autoreleasepool 什么时候释放，在什么场景下使用?
-4. 如何找到字符串中第一个不重复的字符?
-5. 哈希表如何处理冲突?
-6. MVC具有什么样的优势，各个模块之间怎么通信，比如点击 Button 后 怎么通知 Model?
-7. 两个无限长度链表（也就是可能有环） 判断有没有交点?
-8. UITableView的相关优化?
-9. KVO、Notification、delegate各自的优缺点，效率还有使用场景?
-1. 如何手动通知KVO?
-2. Objective-C 中的copy方法?
-3. runtime 中，SEL和IMP的区别?
-4. autoreleasepool的使用场景和原理?
-5. RunLoop的实现原理和数据结构，什么时候会用到?
-6. block为什么会有循环引用?
-7. 有没有自己设计过网络控件?
-8. CoreData的使用，如何处理多线程问题?
-9. 如何设计图片缓存?
-1. 有没有自己设计过网络控件?
-2. NSOperation和GCD的区别介绍下内存的几大区域?
-3. 你是如何组件化解耦的?
-4. runtime如何通过selector找到对应的IMP地址?
-5. runloop内部实现逻辑?
-6. 你理解的多线程?
-7. GCD执行原理?
-8. 怎么防止别人反编译你的app?
-9. YYAsyncLayer如何异步绘制?
-1. 优化你是从哪几方面着手?
-2. 简单说一下APP的启动过程，从main文件开始说起?
-3. 内存分区情况?
-4. 你是否接触过OC的反射机制,简单聊一下概念和使用?
-5. 队列和栈?
-6. import与include 与@class?
-7. Pt与px的区别?
-8. imageName和imageWithContextOfFile的区别?
-9. didReceiveMemoryWarning?
-1. \#define的语法 以及标准宏?
-2. const与static的作用和区别 auto变量?
-3. atomic和non-atomic的区别?
-4. load与initialize的区别?
-5. Weak strong copy assign的区别?
-6. SEL isa super cmd是什么?
-7. Malloc和New的区别?
-8. 懒加载(What  is  lazy  loading  ?)?
-9. selector和method 有什么不同?
-1. C语言相关Sprintf,strcpy,memcpy如何使用及区别?
-2. 代理和通知的区别?
-3. 什么是SEL 如何声明一个SEL,通过哪些方法能够,调用SEL包装起来的方法?
-4. UDID与UUID的区别?
-5. CPU与GPU?
-6. CFSocket CFNetwork BSD Socket?
-7. 编译连接 id 与instancetype的区别?
-8. app内存你是如何分析的?
-9. @synthesize 与 @dynamic区别?
-1. Swift与Objective-C的区别?
-2. NSProxy与NSObject区别?
-3. hybrid开发?
-4. 你会如何存储用户的一些敏感信息，如登录的token?
-5. Block在内存中的位置?
-6. iOS app为什么内存没有泄露，内存却降不下来?
-7. 单例会有什么弊端?
-8. 什么时候会使用Core Graphics，以及使用步骤?
-9. 如何实现夜间模式?
-1. 离屏渲染及其优化方式?
+10. 说说你了解的第三方原理或底层知识?
+11. 怎么判断某个 cell 是否显示在屏幕上?
+12. 进程和线程的区别?
+13. TCP 与 UDP 区别?
+14. TCP 流量控制?
+15. 数组和链表的区别?
+16. UIView 生命周期?
+17. 如果页面 A 跳转到 页面 B，A 的 viewDidDisappear 方法和 B 的 viewDidAppear 方法哪个先调用?
+18. block 循环引用问题?
+19. ARC 的本质?
+20. RunLoop 的基本概念，它是怎么休眠的?
+21. Autoreleasepool 什么时候释放，在什么场景下使用?
+22. 如何找到字符串中第一个不重复的字符?
+23. 哈希表如何处理冲突?
+24. MVC具有什么样的优势，各个模块之间怎么通信，比如点击 Button 后 怎么通知 Model?
+25. 两个无限长度链表（也就是可能有环） 判断有没有交点?
+26. UITableView的相关优化?
+27. KVO、Notification、delegate各自的优缺点，效率还有使用场景?
+28. 如何手动通知KVO?
+29. Objective-C 中的copy方法?
+30. runtime 中，SEL和IMP的区别?
+31. autoreleasepool的使用场景和原理?
+32. RunLoop的实现原理和数据结构，什么时候会用到?
+33. block为什么会有循环引用?
+34. 有没有自己设计过网络控件?
+35. CoreData的使用，如何处理多线程问题?
+36. 如何设计图片缓存?
+37. 有没有自己设计过网络控件?
+38. NSOperation和GCD的区别介绍下内存的几大区域?
+39. 你是如何组件化解耦的?
+40. runtime如何通过selector找到对应的IMP地址?
+41. runloop内部实现逻辑?
+42. 你理解的多线程?
+43. GCD执行原理?
+44. 怎么防止别人反编译你的app?
+45. YYAsyncLayer如何异步绘制?
+46. 优化你是从哪几方面着手?
+***
+### 其他面试题
+48. 简单说一下APP的启动过程，从main文件开始说起?
+49. 内存分区情况?
+50. 你是否接触过OC的反射机制,简单聊一下概念和使用?
+51. 队列和栈?
+52. import与include 与@class?
+53. Pt与px的区别?
+54. imageName和imageWithContextOfFile的区别?
+55. didReceiveMemoryWarning?
+56. \#define的语法 以及标准宏?
+57. const与static的作用和区别 auto变量?
+58. atomic和non-atomic的区别?
+59. load与initialize的区别?
+60. Weak strong copy assign的区别?
+61. SEL isa super cmd是什么?
+62. Malloc和New的区别?
+63. 懒加载(What  is  lazy  loading  ?)?
+64. selector和method 有什么不同?
+65. C语言相关Sprintf,strcpy,memcpy如何使用及区别?
+66. 代理和通知的区别?
+67. 什么是SEL 如何声明一个SEL,通过哪些方法能够,调用SEL包装起来的方法?
+68. UDID与UUID的区别?
+69. CPU与GPU?
+70. CFSocket CFNetwork BSD Socket?
+71. 编译连接 id 与instancetype的区别?
+72. app内存你是如何分析的?
+73. @synthesize 与 @dynamic区别?
+74. Swift与Objective-C的区别?
+75. NSProxy与NSObject区别?
+76. hybrid开发?
+77. 你会如何存储用户的一些敏感信息，如登录的token?
+78. Block在内存中的位置?
+79. iOS app为什么内存没有泄露，内存却降不下来?
+80. 单例会有什么弊端?
+81. 什么时候会使用Core Graphics，以及使用步骤?
+82. 如何实现夜间模式?
+83. 离屏渲染及其优化方式?
 
 ## 答案以及推荐链接
 
