@@ -30,7 +30,7 @@
 - YY面试题 作者：博爱1616
 原文链接：https://www.jianshu.com/p/5a8234ecc664
 
-- 启发光明面试题集 作者：启发禅悟
+- 启发禅悟面试题集 作者：启发禅悟
 简书主页链接：https://www.jianshu.com/u/6dad13dfc23e <https://www.jianshu.com/p/403ee06a584e>
 面试题主页链接:https://www.jianshu.com/p/403ee06a584e
 
