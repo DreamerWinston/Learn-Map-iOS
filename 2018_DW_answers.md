@@ -31,3 +31,61 @@ https://www.jianshu.com/p/e456b7b9f52d
 
 - 使用NSCache是为了以空间换时间（占用访问速度更快的内存，节省IO时间），自然是期望其带来性能提升，这就要求用“键”访问缓存得到“值”的速度非常快。不过受限于系统资源，NSCache 会自动管理缓存里的内容（通常是移除一些键值），这就和字典不一样了。
 ***
+
+## 应用启动时是用怎样加载所有依赖的Mach-O文件的?
+
+### 推荐文章
+
+- Mach-O系列文章
+	- https://mp.weixin.qq.com/s/I60p2M-IHDmeUanDUkFdVw
+	- https://mp.weixin.qq.com/s/fdDPyjRkVf9AdWiikBagHg
+	- https://www.jianshu.com/p/54d842db3f69
+	- https://www.jianshu.com/p/8498cec10a41
+- iOS开发-APP启动main()调用之前的加载过程
+https://www.jianshu.com/p/c603a1e69126
+- 深入理解iOS App的启动过程
+https://blog.csdn.net/Hello_Hwc/article/details/78317863?locationNum=9&fps=1
+- 腾讯bugly App优化
+	- https://mp.weixin.qq.com/s/Kf3EbDIUuf0aWVT-UCEmbA
+- 今日头条iOS端启动速度优化
+	- https://techblog.toutiao.com/2017/01/17/iosspeed/
+- 程序启动原理
+	- https://www.jianshu.com/p/e29177a8bed1
+
+### 答案
+
+- 什么是Mach-O
+	- 首先是我们的代码经过Xcode编译、链接、签名为.app文件
+	- 再通过zip压缩为.ipa包
+	- 我们的代码最终会成为.app文件中的iOS可执行文件，文件格式是Mach-O
+- 应用启动的过程
+	- 应用启动的过程可以分为两种，main函数之前和main函数以后做了什么
+	- dyld加载流程（main函数之前）
+		- 设置上下文信息，配置进程是否受限
+		- 配置环境变量，获取当前运行架构
+		- 加载可执行文件，生成一个ImageLoader对象
+		- 检查共享缓存是否映射到了共享区域
+		- 加载所有插入的库 （import library）
+		- 链接主程序
+		- 链接所有插入的库，执行符号替换
+		- 编译、签名、替换原来生成的insertDylib.dylib，设置环境变量，运行App
+		- 执行初始化方法 +load  constructor
+		- 寻找主程序入口 =>main函数
+	- main函数以后
+		- 先执行main函数，main内部会调用UIApplicationMain函数,
+		- 1)、根据传入的第三个参数创建UIApplication对象或它的子类对象。如果该参数为nil,直接使用该UIApplication来创建。(该参数只能传人UIApplication或者是它的子类)
+		(2)、根据传入的第四个参数创建AppDelegate对象,并将该对象赋值给第1步创建的UIApplication对象的delegate属性。
+		(3)、开启一个事件循环,循环监控应用程序发生的事件。每监听到对应的系统事件时，就会通知AppDelegate。
+		- 有两种情况
+			- 有Storyboard
+				- 应用程创建一个UIWindow对象(继承自UIView),并设置为AppDelegate的window属性。
+				加载Info.plist文件，读取最主要storyboard文件的名称。
+				加载最主要的storyboard文件，创建白色箭头所指的控制器对象。并且设置控制器为UIWindow的rootViewController属性(根控制器)。
+				展示UIWindow,展示之前会将添加rootViewController的view到UIWindow上面(在这一步才会创建控制器的view),其内部会执行该行代码:[window addSubview: window.rootViewControler.view];
+			- 无Storyboard
+				- 首先会调用delegate对象的application:didFinishLaunchingWithOptions:方法。
+				在application:didFinishLaunchingWithOptions:方法中需要主动创建 UIWindow对象。并设置为AppDelegate的window属性。
+				主动创建一个 UIViewController对象，并赋值给window的rootViewController属性。
+				调用 window的makeKeyAndVisible方法显示窗口。
+
+*** 
