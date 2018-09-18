@@ -103,3 +103,27 @@ https://blog.csdn.net/Hello_Hwc/article/details/78317863?locationNum=9&fps=1
 - 如何测量启动过程耗时
 	- 在Xcode的菜单中选择Project→Scheme→Edit Scheme...，然后找到 Run → Environment Variables →+，添加name为DYLD_PRINT_STATISTICSvalue为1的环境变量。 
 ***
+## 有没有做过项目的优化,请列举你所知道main()函数之前耗时的因素都有哪些,点击应用响应时间多少ms之内不会让用户察觉到？
+
+### 推荐文章
+- 腾讯bugly优化
+	- https://mp.weixin.qq.com/s/Kf3EbDIUuf0aWVT-UCEmbA
+- 今日头条iOS端优化
+	- https://techblog.toutiao.com/2017/01/17/iosspeed/
+
+### 答案
+
+- 400ms之内
+	- 400ms内完成main()函数前的加载的建议值是怎样定出来的呢？其实我也没有太深究过这个问题，但是，当用户点击了一个App的图标时，iOS做动画到闪屏图出现的时长正好是这个数字，我想也许跟这个有关。
+- main()函数之前耗时的影响因素
+	- 动态库加载越多，启动越慢。
+	- ObjC类越多，启动越慢
+	- C的constructor函数越多，启动越慢
+	- C++静态对象越多，启动越慢
+	- ObjC的+load越多，启动越慢
+- main()函数之后耗时的影响因素
+	- 执行main()函数的耗时
+	- 执行applicationWillFinishLaunching的耗时
+	- rootViewController及其childViewController的加载、view及其subviews的加载
+
+***
