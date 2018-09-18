@@ -89,3 +89,17 @@ https://blog.csdn.net/Hello_Hwc/article/details/78317863?locationNum=9&fps=1
 				调用 window的makeKeyAndVisible方法显示窗口。
 
 *** 
+
+## 什么是冷启动,什么是热启动?
+
+### 推荐文章
+- 腾讯Bugly App优化 https://mp.weixin.qq.com/s/Kf3EbDIUuf0aWVT-UCEmbA
+
+### 答案
+
+- 冷启动与热启动
+	- 当用户按下home键的时候，iOS的App并不会马上被kill掉，还会继续存活若干时间。理想情况下，用户点击App的图标再次回来的时候，App几乎不需要做什么，就可以还原到退出前的状态，继续为用户服务。这种持续存活的情况下启动App，我们称为热启动，
+	- 相对而言冷启动就是App被kill掉以后一切从头开始启动的过程。
+- 如何测量启动过程耗时
+	- 在Xcode的菜单中选择Project→Scheme→Edit Scheme...，然后找到 Run → Environment Variables →+，添加name为DYLD_PRINT_STATISTICSvalue为1的环境变量。 
+***
