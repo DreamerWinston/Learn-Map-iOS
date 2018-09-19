@@ -187,3 +187,20 @@ https://blog.csdn.net/Hello_Hwc/article/details/78317863?locationNum=9&fps=1
 	- GCD 充分利用设备的多核 充分利用设备的多核 C语言
 	- NSOperation 基于GCD（底层是GCD）比GCD多了一些更简单实用的功能 更加面向对象 基于OC
 ***
+## Reachability是用来判断网络状态的,请简述一下其原理?
+
+### 推荐文章
+- https://developer.apple.com/documentation/systemconfiguration/scnetwork
+- https://developer.apple.com/documentation/systemconfiguration/scnetworkconnection-g7e
+
+### 答案
+- Reachability并不能检测到服务器是否真的可达，只能检测设备是否连接到局域网，以及用的WiFi还是WWAN。即：把设备网络关了，立马检测出NotReachable，连接到路由器立马检测出是ReachableViaWiFi
+- 导入<SystemConfiguration/SystemConfiguration.h>
+- SCNetwork 
+通过SCNetworkReachabilityFlags 来区别网络变更
+- NotReachable
+- WWAN
+- WiFi
+- Unknown
+
+***
