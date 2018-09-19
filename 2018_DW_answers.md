@@ -156,3 +156,21 @@ https://blog.csdn.net/Hello_Hwc/article/details/78317863?locationNum=9&fps=1
 	- 注意：访问成员变量 _age 如果在.h文件中没有定义_age成员变量的话，就会在.m文件中自动生成@private类型的成员变量_age
 	
 ***
+## Runtime机制是什么?有没有写过方法欺骗?简述一下?
+
+### 推荐文章
+- iOS开发之Runtime
+ - https://www.jianshu.com/p/d32b96720937
+### 答案
+- 什么是Runtime？
+	- Objective-C的动态性是由Runtime API来支撑的
+	- Runtime API提供的接口基本都是C语言的，源码由C\C++\汇编语言编写
+- 什么是消息机制
+	- OC中的方法调用，其实都是转换为objc_msgSend函数的调用
+	- 也就是消息机制
+	- 消息机制分为三部分：消息发送、动态方法解析、消息转发
+- 方法欺骗method swizzling
+	- class_replaceMethod
+	- method_exchangeImplementations
+***
+
