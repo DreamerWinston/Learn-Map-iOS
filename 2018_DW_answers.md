@@ -204,3 +204,19 @@ https://blog.csdn.net/Hello_Hwc/article/details/78317863?locationNum=9&fps=1
 - Unknown
 
 ***
+## LayoutSubviews这个方法一般在什么情况下调用的?
+
+### 推荐文章
+- https://www.jianshu.com/p/d1ce00f08b7f
+- https://www.jianshu.com/p/2ef48c2f0c97
+
+### 答案
+
+1. init方法不会调用 
+2. addSubview方法等时候会调用 
+3. bounds改变的时候调用 
+4. scrollView滚动的时候会调用scrollView的layoutSubviews方法(所以不建议在scrollView的layoutSubviews方法中做复杂逻辑) 
+5. 旋转设备的时候调用 
+6. 子视图被移除的时候调用 
+
+***
