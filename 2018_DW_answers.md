@@ -220,3 +220,34 @@ https://blog.csdn.net/Hello_Hwc/article/details/78317863?locationNum=9&fps=1
 6. 子视图被移除的时候调用 
 
 ***
+
+## 在一个表内有很多cell,每个cell上有很多个视图,如何解决卡顿问题(提示Runloop)。
+
+### 推荐文章
+- https://developer.apple.com/videos/play/wwdc2014/419/
+- 作者：落影loyinglin
+链接：https://www.jianshu.com/p/748f9abafff8
+- https://blog.ibireme.com/2015/11/12/smooth_user_interfaces_for_ios/
+- 推荐书籍：OpenGL ES应用开发实践指南：iOS卷
+- 推荐书籍：iOS Core Animation 高级核心动画 中文译本
+
+
+### 答案
+
+- iOS渲染视图的核心是Core Animation 其渲染层次依次为：GPU ->OpenGL Core Graphics->Core Animation ->UIKit
+- 在App当中有4个阶段 依次为 布局 创建 准备 提交 ，在渲染数据到达渲染树后，则会根据Vsync信号 进行前后帧缓存 也就是OpenGL ES原理，识别出颜色和纹理，然后渲染到屏幕上。
+- 其中会出现：离屏渲染，图层混合，延迟加载，图片解压。
+- 优化方案围绕着 使用多线程调用，合理利用CPU计算位置，布局，层次，解压等，再合理调度GPU进行渲染，GPU负担常常要比CPU大，合理调度CPU进行计算可以减轻GPU渲染负担，使应用更加流畅。
+- 图层树 呈现树 渲染树
+- 什么是FPS，iOS应用的FPS如何计算
+* iOS应用中的显示图像的原理
+ - UIKit是常用的框架，显示、动画都通过CoreAnimation
+ - CoreAnimation是核心动画，依赖于OpenGL ES做GPU渲染，CoreGraphics做CPU渲染；
+ - 最底层的GraphicsHardWare是图形硬件。
+* CPU 资源消耗原因和解决方案
+* Vsync
+* AsyncDIsplayKit的原理
+* YYAsyncLayer的原理
+
+因为答案过长 后期整理为文章，单独描述。
+***
