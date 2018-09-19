@@ -173,4 +173,17 @@ https://blog.csdn.net/Hello_Hwc/article/details/78317863?locationNum=9&fps=1
 	- class_replaceMethod
 	- method_exchangeImplementations
 ***
+## GCD和NSOperation的区别之处,请分别说一下特点?
 
+### 推荐文章
+
+### 答案
+- 多线程方案都有哪些
+	- pthread
+	- NSThread
+	- GCD
+	- NSOperation
+- GCD和NSOperation的优劣之处
+	- GCD 充分利用设备的多核 充分利用设备的多核 C语言
+	- NSOperation 基于GCD（底层是GCD）比GCD多了一些更简单实用的功能 更加面向对象 基于OC
+***
