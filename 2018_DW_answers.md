@@ -251,3 +251,18 @@ https://blog.csdn.net/Hello_Hwc/article/details/78317863?locationNum=9&fps=1
 
 因为答案过长 后期整理为文章，单独描述。
 ***
+
+## Objective-C语言中闭包是如何实现的，闭包中有什么需要注意，闭包运行环境是在堆还是在栈。
+
+### 推荐文章
+
+### 答案
+- 什么是闭包
+- Objective-C中的闭包（block）
+- block在运行时的分类
+	- 分为三种
+	- global block
+	- stack block
+	- malloc block
+
+***
