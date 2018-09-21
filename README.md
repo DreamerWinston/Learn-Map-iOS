@@ -23,6 +23,14 @@
 ## 个人关注博主
 这是一些我会单独抽出时间，阅读他们写过的每篇文章，并追赶他们的脚步。
 
+[Joy___](https://www.jianshu.com/u/9c51a213b02e)：常更新iOS底层文章、以及性能优化相关。
+
+[落影loyinglin](https://www.jianshu.com/u/815d10a4bdce)：常更新音视频相关文章，关键词Metal、OpenGL、GPUImage
+
+[启发禅悟](https://www.jianshu.com/u/6dad13dfc23e)：常更新面试题相关文章。
+
+[indulge_in](https://www.jianshu.com/u/a89bf7b8bdd8)：YYKit剖析系列文章，并开源了一款图片框架。
+
 ## iOS开发历史文章
 
 大多数为**iOS 5~iOS 9**期间的文章(2011.7月~2018.1月)。
